@@ -12,8 +12,8 @@ Creare una funzione per capire se la parola inserita è palindroma
 
 function isPalindrome(input){
 
-    let i = 0
-    let palindrome = false
+    let i = 0;
+    let palindrome = false;
     
     do{
             
@@ -32,11 +32,11 @@ function isPalindrome(input){
     
     if (palindrome === true){
     
-        return true
+        return true;
     
     } else {
     
-        return false
+        return false;
     
     }
 }
@@ -49,9 +49,13 @@ buttonStart.addEventListener("click", function(){
     
     
     if(isPalindrome(inputCheck)){
-        document.getElementById("result").innerText = "è palindromo"
+        document.getElementById("result").innerText = "È palindromo";
+        document.getElementById("result").classList = "col-5 bg-success text-white rounded-3 my-3 p-1 text-center";
+
     } else {
-        document.getElementById("result").innerText = "Non è palindromo"
+        document.getElementById("result").innerText = "Non è palindromo";
+        document.getElementById("result").classList = "col-5 bg-danger text-white rounded-3 my-3 p-1 text-center";
+
 
     }
 })
