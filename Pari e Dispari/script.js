@@ -61,14 +61,6 @@ function(){
     
     }
 
-    // if (userChoice === isEven(sum)){
-    //     document.getElementById("result").innerText = "Hai vinto!"
-        
-    // } else {
-    //     document.getElementById("result").innerText = "Hai perso!"
-
-
-    // }
 
 })
 
