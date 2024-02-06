@@ -11,19 +11,42 @@
 
 </head>
 <body>
-    <label for="">inserisci un numero</label>
-    <input type="text" id="user-number">
-
-    <label for="">pari o dispari?</label>
-    <input type="text" id="user-choice">
 
     
     
-    <button id="start">Gioca</button>
-    
-    <div id="pc-number"></div>
-    <div id="sum"></div>
-    <div id="result"></div>
+    <div class="container mt-4 ">
+        <div class="row align-items-center flex-column ">
+            <form class="col-6 ">
+                <div class="mb-3">
+                    <label class="form-label">Inserisci un numero</label>
+                    <input type="number" class="form-control" id="user-number">
+                </div>
+                
+                <div class="mb-3">
+                    <label class="form-label">Pari o dispari?</label>
+                    <input type="text" class="form-control" id="user-choice">
+                </div>
+                
+            </form>
+            <button id="start" class="btn btn-primary col-4 mt-4">Gioca</button>
+            <div class="col-5 mt-3">
+                <div id="pc-number"></div>
+                <div id="sum"></div>
+                <div id="result"></div>
+
+            </div>
+
+            <div class="text-center">
+                <a href="../index.html">Vai alla home</a>
+            </div>
+
+        </div>
+        
+        
+        
+        
+        
+    </div>
 
 
     <!-- ------------------------------ Bootstrap ------------------------------ -->

@@ -13,14 +13,25 @@ della somma ha vinto, altrimenti ha perso.
 
 const buttonStart = document.getElementById("start")
 
-
+// funzione random
 function randomGenPc(){
     const random = Math.floor(Math.random()*5)+1;
     return random;
 }
 
-buttonStart.addEventListener("click",
+//funzione pari o dispari
+function oddOrEven(number){
+    
+    if(number%2 == 0){        
+        return  "pari"
+    } else {
+        return "dispari"
+    }
+    
+}
 
+
+buttonStart.addEventListener("click",
 function(){
 
     const userChoice = document.getElementById("user-choice").value;
@@ -28,21 +39,9 @@ function(){
     
     let pcNumber = randomGenPc()
     let sum = userNumber + pcNumber
-
-    function oddOrEven(number){
-        
-        if(number%2 == 0){        
-            return  "pari"
-        } else {
-            return "dispari"
-        }
-        
-    }
-    
+  
 
     document.getElementById("sum").innerText = `Il PC ha scelto ${pcNumber}, quindi la somma è ${sum}`;
-
-
 
     if (userNumber>5 || userNumber<0 || isNaN(userNumber)){
         alert("Inserisci un numero corretto!");
@@ -54,9 +53,13 @@ function(){
      
     } else if (userChoice === oddOrEven(sum)) {
         document.getElementById("result").innerText = "Hai vinto!";
+        document.getElementById("result").classList = "bg-success text-center text-white rounded-3 mt-3 p-1";
+
     
     } else {
         document.getElementById("result").innerText = "Hai perso!";
+        document.getElementById("result").classList = "bg-danger text-center text-white rounded-3 mt-3 mb-3 p-1";
+
     
     
     }
