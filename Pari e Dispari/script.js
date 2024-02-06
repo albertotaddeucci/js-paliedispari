@@ -61,7 +61,6 @@ function(){
         document.getElementById("result").classList = "bg-danger text-center text-white rounded-3 mt-3 mb-3 p-1";
 
     
-    
     }
 
 
